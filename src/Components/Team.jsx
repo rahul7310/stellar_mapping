@@ -76,7 +76,15 @@ export default function Team() {
           <h4 style={{ color: "ivory" }}>Sivakumar</h4>
           <p style={{ marginTop: "10px", textAlign: "center", color: "white" }}>
             Exploring and learning new stuffs! Physics is my favourite, Math is
-            my queen, Programming since 2018.
+            my queen, Programming since 2018. Having work experience in the domain of applied Deep Learning. 
+            As a part of the Natural Language Processing Research team at ZOHO corporation, 
+            I have developed RAG-based chatbot that is now scaled for millions of users. 
+            From predicting whether a customer requires assistance, detecting phishing mails, 
+            to analyzing root cause of customer's negative remarks and 
+            thereby reducing customer churn by addressing the relevant issue, 
+            I have worked on many other generative AI tasks like Content creation, 
+            Email reply generation, FAQ generation and so on. 
+            I was also a part of the research work involving multimodality and Vision Language Models. 
           </p>
         </div>
         <div
