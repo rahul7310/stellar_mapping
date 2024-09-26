@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Experience from "./Experience";
 import { useEffect, useState } from "react";
 import Introduction from "./Components/Introduction";
+import Team from "./Components/Team";
 
 export default function App() {
   const [selectedTab, setSelectedTab] = useState("Introduction");
@@ -36,6 +37,8 @@ export default function App() {
             <Introduction />
           </div>
         </>
+      ) : selectedTab === "Team" ? (
+        <Team />
       ) : (
         <></>
       )}
