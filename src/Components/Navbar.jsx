@@ -63,6 +63,16 @@ export default function Navbar({ setSelectedTab, selectedTab }) {
         >
           <div style={{ margin: "5px" }}>Conclusion</div>
         </div>
+        <div
+          style={{
+            cursor: "pointer",
+            border: selectedTab === "Team" ? "solid 1px yellow" : "none",
+            borderRadius: "5px",
+          }}
+          onClick={() => setSelectedTab("Team")}
+        >
+          <div style={{ margin: "5px" }}>Team</div>
+        </div>
       </div>
     </div>
   );

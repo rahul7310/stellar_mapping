@@ -12,5 +12,5 @@ body,
 
 @font-face {
     font-family: 'SpaceGrotesk-VariableFont_wght';
-    src: url('SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    src: url('../public/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
 }
