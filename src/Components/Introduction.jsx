@@ -20,23 +20,22 @@ export default function Introduction() {
         >
           <h3 style={{ color: "yellow" }}>The nature of the topic</h3>
           <p>
-            This project combines astronomy and technology. It's an attempt to
-            create a system that can automatically recognize and label star
-            patterns in images taken of the sky and give some extra information
-            abt it. It's specifically useful for people who don't have a lot of
-            constellation knowledge, to understand and appreciate the beauty of
-            the stars. As more discoveries of celestial objects are being made
-            on a regular basis due to large telescopes capturing clear and high
-            definition images of deep space giving more interesting observations
-            of our universe, the study of constellations is also gaining some
-            progress in astronomical data analysis. As of today, The
-            International Astronomical Union (IAU) recognizes 88 constellations.
-            Among the 88 recognized constellations, there are various themes and
-            representations. For instance, 42 of them depict animals, 29
-            represent inanimate objects, and 17 illustrate humans or
-            mythological characters. This diversity reflects humanity's
-            long-standing fascination with the stars and their stories.
+            Constellations are groups of stars that form recognizable patterns
+            or shapes in the night sky. They serve as celestial landmarks,
+            helping us locate and understand the positions of stars and other
+            astronomical objects. Constellations have been a huge part of human
+            history from being used as navigational tools by sailors to being
+            linked to seasons and agricultural cycles. They even have a place in
+            the myths and lores of many cultures across the world. Currently,
+            the International Astronomical Union (IAU) officially recognizes 88
+            constellations. Among the 88 recognized constellations, there are
+            various themes and representations. For instance, 42 of them depict
+            animals, 29 represent inanimate objects, and 17 illustrate humans or
+            mythological characters. Through this project we aim to leverage
+            data science techniques to build a model that can accurately
+            identify constellations in astronomical images.
           </p>
+          <div></div>
           <h3 style={{ color: "yellow" }}>Why it is important?</h3>
           <p>
             Today, most people lack knowledge about constellations - the number
@@ -56,31 +55,55 @@ export default function Introduction() {
           </p>
           <h3 style={{ color: "yellow" }}>Who is affected?</h3>
           <p>
-            This project will benefit many people, from amateur astronomers to
-            students and educators. For amateur astronomers, having a tool that
-            quickly identifies constellations can enhance their stargazing
-            experience. Students can use such a system in classrooms or during
-            field trips to learn about space in a fun and interactive way.
+            Accurate identification of constellations can help in tracking the
+            movements of stars and planets. This can in turn help in the
+            advancement of Astronomy as a whole. It can be extremely valuable in
+            enhancing educational programs and outreach efforts of planetariums
+            and science centers and helping them make astronomy more accessible
+            to the general public. Furthermore, it could assist professional
+            astronomers in their research by quickly identifying celestial
+            objects. The technology might also be adapted for use in satellite
+            navigation systems, improving their accuracy and reliability. By
+            making astronomy more accessible to everyone, this project has the
+            potential to inspire a genereation of future scientists and space
+            explorers.
           </p>
           <h3 style={{ color: "yellow" }}>
             What has been done so far and what gaps remain?
           </h3>
           <p>
-            Despite the progress made, there are still gaps that need to be
-            filled in this field. We need better ways to handle situations where
-            only part of a constellation is visible or when stars are faint due
-            to light pollution. Additionally, we should develop systems that can
-            adapt to different cameras or telescopes used by stargazers around
-            the world. As interest in space exploration continues to grow,
-            having reliable tools for identifying constellations will become
-            increasingly important.
+            Researchers have made significant strides in developing intelligent
+            constellation detection algorithms and star recognition systems.
+            These advanced technologies effectively detect stars, produce
+            orientation data, and label celestial patterns with impressive
+            accuracy. Utilizing computer vision techniques, particularly the
+            OpenCV library and trained HAAR cascades, these systems can
+            recognize specific star patterns. They have demonstrated a
+            remarkable 90% success rate in correctly identifying sources and
+            mapping constellations. The applications of these systems extend to
+            various amateur astronomy projects, enhancing the experience for
+            novice stargazers. Additionally, they hold potential for telescope
+            orientation and automatic image classification, streamlining data
+            analysis. Some systems developed at institutions like MIT Haystack
+            Observatory study star-forming sites in our galaxy and nearby
+            galaxies using interferometric arrays. Other projects aim to detect
+            hydrogen signatures from the formation of the first stars and
+            galaxies. The development of imaging algorithms for radio
+            interferometry has also been essential in creating astronomical
+            images from data collected by projects like the Event Horizon
+            Telescope. Despite these advancements, challenges still exist that
+            need attention. For example, better methods are needed to handle
+            situations where only part of a constellation is visible or when
+            stars are faint due to light pollution. Additionally, it is crucial
+            to develop systems that can adapt to different cameras or telescopes
+            used by stargazers worldwide. As interest in space exploration
           </p>
           <h3 style={{ color: "yellow" }}>Questions related to Dataset?</h3>
           <p>
             On a yearly basis, the astronomical catalogs are being released that
             contain huge lists of astronomical objects and that also includes
             the stars that make up the constellations. One example being Sloan
-            Digital Sky Survey (SDSS) [1]that contains a repository of deep sky
+            Digital Sky Survey (SDSS) that contains a repository of deep sky
             images in multiple formats and releases the new dataset with latest
             detected celestial objects on a yearly basis.
             <li>
