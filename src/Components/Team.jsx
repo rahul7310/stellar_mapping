@@ -40,6 +40,14 @@ export default function Team() {
             Beyond tech, she is a trained Carnatic singer, a regional-level
             chess player, and an amateur guitarist.
           </p>
+          <a
+          href="https://www.linkedin.com/in/tatasainandini/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "lightblue", marginTop: "10px" }}
+        >
+          LinkedIn
+        </a>
         </BioCard>
         <BioCard>
           <img
@@ -68,6 +76,14 @@ export default function Team() {
             I was also a part of the research work involving multimodality and
             Vision Language Models.
           </p>
+          <a
+          href="https://www.linkedin.com/in/siva-kumar-5b2527190/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "lightblue", marginTop: "10px" }}
+        >
+          LinkedIn
+        </a>
         </BioCard>
         <BioCard>
           <img
@@ -94,6 +110,14 @@ export default function Team() {
             working as a Software Engineer across industries. Passionate about
             Math and a keen interest in data science. Enjoy building things.
           </p>
+          <a
+          href="https://github.com/rahul7310"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "lightblue", marginTop: "10px" }}
+        >
+          GitHub
+        </a>
         </BioCard>
       </TeamContainer>
     </>
