@@ -45,7 +45,7 @@ export default function App() {
         <div
           style={{
             width: "100%",
-            height: "100%",
+            height: "500%",
             marginTop: "50px",
             overflow: "auto",
           }}
@@ -61,7 +61,7 @@ export default function App() {
             <Stars
               radius={100}
               depth={50}
-              count={15000}
+              count={30000}
               factor={6}
               saturation={0}
               fade
