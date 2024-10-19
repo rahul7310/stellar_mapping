@@ -175,6 +175,7 @@ export default function DataExploration() {
                 </HeadingContainer>
                 The Instructables{" "}
                 <a
+                  style={{ color: "salmon" }}
                   target="_blank"
                   href="https://www.instructables.com/Star-Recognition-Using-Computer-Vision-OpenCV/"
                 >
