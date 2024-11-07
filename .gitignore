@@ -3,7 +3,7 @@ package-lock.json
 .DS_Store
 vllm/
 stellar_mapping/data/
-src/analytics/image_analytics/config.ini
+stellar_mapping/src/analytics/image_analytics/config.ini
 data/
 src/analytics/text_analytics/src/stellar_llm_generation/.env
 .idea
