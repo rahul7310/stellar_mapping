@@ -1,10 +1,21 @@
 from fastapi import FastAPI
 from schema.skeleton import QueryRequest
 import uvicorn
+from src.analytics.text_analytics.src.stellar_llm_generation.core.generation.llm_generation import LLMGenerator
 
 app = FastAPI()
 
-@app.post("/rag")
+generator = LLMGenerator()
+
+@app.post("/text/chat/generate")
 async def rag(query_request: QueryRequest):
-    return {"query": query_request.query, "image": query_request.image}
+    # Retrieval
+    pass
+    # ReRanking
+    pass
+    # Generation
+    model_response = generator.generate(query_request.messages)
+    return {"model_response": model_response}
+
+
 
