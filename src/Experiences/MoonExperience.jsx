@@ -2,8 +2,10 @@ import { Stars, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
-export default function Experience() {
-  const moon = useGLTF("Moon.glb");
+export default function MoonExperience() {
+  const moon = useGLTF("/models/Moon.glb");
+  // const moon = useGLTF("Rocket.glb");
+  console.log(moon);
 
   const moonRef = useRef();
 

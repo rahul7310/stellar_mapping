@@ -63,7 +63,7 @@ export default function DataExploration() {
           top: 0,
           left: 0,
           width: "100%",
-          marginTop: "50px",
+          marginTop: "550px",
         }}
       >
         <div
