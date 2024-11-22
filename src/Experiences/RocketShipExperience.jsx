@@ -9,7 +9,7 @@ import {
   useHelper,
 } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 import { AnimationMixer, AnimationAction } from "three";
 import { TextureLoader } from "three/src/Three.js";
 
@@ -19,6 +19,7 @@ import * as THREE from "three";
 import Robot from "../Models/Robot";
 import RocketShip from "../Models/RocketShip";
 import StarFall from "./StarFall";
+import Loading from "../Components/Loading";
 
 export default function RocketShipExperience() {
   // const rocket = useGLTF("Rocket.glb");
@@ -66,60 +67,25 @@ export default function RocketShipExperience() {
 
   return (
     <>
-      <ambientLight intensity={0.3} />
-      {/* <ambientLight intensity={1} />
-      <OrbitControls />
-      <directionalLight
-        castShadow
-        position={[1, 2, 3]}
-        color="white"
-        intensity={2}
-      /> */}
-      {/* <mesh>
-        <primitive scale={0.15} object={robot.scene} />
-      </mesh> */}
-      {/* <ForeignPlanet />
-      <mesh castShadow>
-        <primitive scale={0.4} object={robot.scene} />
-      </mesh> */}
-      {/* 
-      <Stars
-        ref={starRef}
-        radius={100}
-        depth={50}
-        count={1500}
-        factor={6}
-        saturation={0}
-        fade
-      /> */}
+      <Suspense fallback={<Loading />}>
+        <ambientLight intensity={0.3} />
 
-      {/* <ambientLight intensity={1} /> */}
-      {/* <OrbitControls makeDefault /> */}
-      <directionalLight
-        ref={directionalLight}
-        castShadow
-        position={[1, 2, 3]}
-        intensity={3}
-      />
-      {/* <ForeignPlanet /> */}
-
-      <StarFall />
-
-      <group position={[0, -1.5, 0]} rotation-z={Math.PI * -0.15}>
-        <mesh ref={rocketShip}>
-          {/* <Robot scale={0.37} position-x={1} /> */}
-          <RocketShip scale={4} />
-        </mesh>
-      </group>
-
-      {/* <mesh position-y={0} receiveShadow rotation-x={-Math.PI * 0.5} scale={10}>
-        <planeGeometry />
-        <meshStandardMaterial
-          map={surfaceTexture}
-          // normalMap={surfaceTextureNormal}
-          color={"black"}
+        <directionalLight
+          ref={directionalLight}
+          castShadow
+          position={[1, 2, 3]}
+          intensity={3}
         />
-      </mesh> */}
+
+        <StarFall />
+
+        <group position={[0, -1.5, 0]} rotation-z={Math.PI * -0.15}>
+          <mesh ref={rocketShip}>
+            {/* <Robot scale={0.37} position-x={1} /> */}
+            <RocketShip scale={4} />
+          </mesh>
+        </group>
+      </Suspense>
     </>
   );
 }

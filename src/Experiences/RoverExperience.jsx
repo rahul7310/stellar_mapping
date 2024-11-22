@@ -1,9 +1,9 @@
 import { OrbitControls, Stars, useGLTF } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import { TextureLoader } from "three/src/Three.js";
-import RocketShip from "../Models/RocketShip";
 import SpaceRover from "../Models/SpaceRover";
+import Loading from "../Components/Loading";
 
 export default function RoverExperience() {
   const surfaceTexture = useLoader(
@@ -19,12 +19,14 @@ export default function RoverExperience() {
 
   useFrame(() => {
     if (sphereRef.current) {
-      sphereRef.current.position.z -= 0.002;
+      if (sphereRef.current.position.z > -5) {
+        sphereRef.current.position.z -= 0.0025;
+      } else {
+        sphereRef.current.position.z = 5;
+      }
     }
   });
-  //   const rover = useGLTF("/models/Rocketship.glb");
 
-  //   console.log(rover);
   const directionalLight = useRef();
 
   const ForeignPlanet = () => {
@@ -33,9 +35,10 @@ export default function RoverExperience() {
         ref={sphereRef}
         rotation={[Math.PI * 1.5, Math.PI * 2, Math.PI * 1.75]}
         receiveShadow
-        position={[0, 0, 0]}
+        position={[0, 0, 5]}
       >
-        <planeGeometry receiveShadow args={[60, 30]} scale={1} />
+        {/* <planeGeometry receiveShadow args={[60, 30]} scale={1} /> */}
+        <circleGeometry args={[10, 32]} />
         {/* <sphereGeometry receiveShadow args={[1, 256, 256]} /> */}
         <meshStandardMaterial
           map={surfaceTexture}
@@ -47,27 +50,26 @@ export default function RoverExperience() {
 
   return (
     <>
-      <ambientLight intensity={0.7} />
+      <Suspense fallback={<Loading />}>
+        <ambientLight intensity={1} />
+        <directionalLight
+          ref={directionalLight}
+          castShadow
+          position={[4, 2, 3]}
+          intensity={4}
+        />
 
-      <OrbitControls />
-
-      <directionalLight
-        ref={directionalLight}
-        castShadow
-        position={[4, 2, 3]}
-        intensity={4}
-      />
-
-      <ForeignPlanet />
-      <SpaceRover />
-      <Stars
-        radius={100}
-        depth={50}
-        count={1500}
-        factor={6}
-        saturation={0}
-        fade
-      />
+        <ForeignPlanet />
+        <SpaceRover />
+        <Stars
+          radius={100}
+          depth={50}
+          count={1500}
+          factor={6}
+          saturation={0}
+          fade
+        />
+      </Suspense>
       {/* <primitive
         castShadow
         object={rover.scene}

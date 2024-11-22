@@ -16,15 +16,15 @@ export default function SpaceRover(props) {
 
   useFrame(() => {
     if (wheel1_ref.current) {
-      wheel1_ref.current.rotation.x += 0.005;
-      wheel2_ref.current.rotation.x += 0.005;
-      wheel3_ref.current.rotation.x += 0.005;
-      wheel4_ref.current.rotation.x += 0.005;
+      wheel1_ref.current.rotation.x += 0.01;
+      wheel2_ref.current.rotation.x += 0.01;
+      wheel3_ref.current.rotation.x += 0.01;
+      wheel4_ref.current.rotation.x += 0.01;
     }
   });
 
   return (
-    <group scale={0.37} {...props} dispose={null} position={[0, 0, 0]}>
+    <group scale={0.37} {...props} dispose={null} position={[0, 0.03, 0]}>
       <mesh
         ref={wheel1_ref}
         castShadow
