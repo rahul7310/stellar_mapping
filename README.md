@@ -83,6 +83,10 @@ stellar_mapping/
 3. Ensemble Architecture (CNN + ViT)
 4. EfficientNet Architecture
 
+**Trained Models and Evaluation link** [link](https://drive.google.com/drive/folders/1wNStLgkJYmBll8tsK3iv_dr7QcVyNklY?usp=sharing) 
+*Note: Only CU Boulder staff and students can access the above link for now
+
+
 ## Attributions
 - Moon 3D Model: Poly by Google [CC-BY](https://creativecommons.org/licenses/by/3.0/) via [Poly Pizza](https://poly.pizza/m/9OPocAqXM0u)
 - Constellation Dataset: [Roboflow Universe](https://universe.roboflow.com/ws-qwbuh/constellation-dsphi)
