@@ -329,6 +329,67 @@ export default function DataExploration() {
               </Card>
 
               <Card>
+                <CardHeader>Pixel Intensity Analysis</CardHeader>
+                <CardContent>
+                  <p className="mb-4">
+                    Evaluating the average and variability of pixel intensities for each class can reveal 
+                    differences in brightness or contrast between classes. This information can inform 
+                    preprocessing strategies and help optimize model training. The analysis helps identify 
+                    any systematic differences in image characteristics across constellation classes.
+                  </p>
+                  <div className="flex justify-center">
+                    <img 
+                      src="./MeanPixelIntensity.png" 
+                      style={{ maxWidth: '600px', height: 'auto' }} 
+                      alt="Pixel intensity analysis"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>Constellation Mapping</CardHeader>
+                <CardContent>
+                  <p className="mb-4">
+                    The constellation map provides a visual representation of the relationships between 
+                    different constellations. By visualizing the proximity and overlap of constellations, 
+                    we can gain insights into their spatial distribution and potential correlations. This 
+                    visualization can be useful for understanding the overall structure of the celestial 
+                    sphere and identifying potential challenges in constellation recognition tasks, such 
+                    as overlapping star patterns or ambiguous boundaries.
+                  </p>
+                  <div className="flex justify-center">
+                    <img 
+                      src="./ConstellationMapping.png" 
+                      style={{ maxWidth: '600px', height: 'auto' }} 
+                      alt="Constellation mapping"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>Constellation Boundaries</CardHeader>
+                <CardContent>
+                  <p className="mb-4">
+                    This visualization provides a detailed view of the 88 officially recognized constellations, 
+                    outlining their boundaries and highlighting their relative positions in the night sky. 
+                    By clearly delineating the boundaries, this map helps to distinguish between different 
+                    constellations and avoid confusion, especially in areas where star patterns overlap. 
+                    This visualization is a valuable tool for stargazers and astronomers alike, aiding in 
+                    the identification and study of celestial objects.
+                  </p>
+                  <div className="flex justify-center">
+                    <img 
+                      src="./ConstellationBoundaries.png" 
+                      style={{ maxWidth: '600px', height: 'auto' }} 
+                      alt="Constellation boundaries"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
                 <CardHeader>Color Channel Distribution</CardHeader>
                 <CardContent>
                   <p className="mb-4">
@@ -436,7 +497,7 @@ export default function DataExploration() {
                 </CardContent>
               </Card>
 
-              <h3 style={{ color: "yellow", marginTop: "20px" }}>2.4 Co-occurance Analysis</h3>
+              <h3 style={{ color: "yellow", marginTop: "20px" }}>2.5 Co-occurance Analysis</h3>
             <Card>
                 <CardHeader>Correlation Analysis</CardHeader>
                 <CardContent>
@@ -467,7 +528,7 @@ export default function DataExploration() {
               </Card>
             </div>
 
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.5 Dataset Splitting</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.6 Dataset Splitting</h3>
             <Card>
               <CardContent>
                 <p>The dataset is stratified into:</p>
