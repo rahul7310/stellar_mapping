@@ -2,8 +2,23 @@ node_modules/
 package-lock.json
 .DS_Store
 vllm/
-stellar_mapping/data/
-stellar_mapping/src/analytics/image_analytics/config.ini
+src/analytics/image_analytics/config.ini
 data/
 src/analytics/text_analytics/src/stellar_llm_generation/.env
 .idea
+src/analytics/text_analytics/src/stellar_llm_generation/.env
+src/analytics/image_analytics/models/CNN/__pycache__
+src/analytics/image_analytics/models/CNN/wandb
+src/analytics/image_analytics/models/CNN/logs/cnn_constellation_classification_20241120_145519/best_model.pt
+src/analytics/image_analytics/models/EfficientNet/__pycache__
+src/analytics/image_analytics/models/EfficientNet/efficientnet_constellation_classification_cpu
+src/analytics/image_analytics/models/EfficientNet/results
+src/analytics/image_analytics/models/EfficientNet/wandb
+src/analytics/image_analytics/models/Ensemble/__pycache__
+src/analytics/image_analytics/models/Ensemble/wandb
+src/analytics/image_analytics/models/Ensemble/experiments/constellation_ensemble/ensemble_model/checkpoints/
+src/analytics/image_analytics/models/Ensemble/experiments/constellation_ensemble/ensemble_model/evaluation/predictions/
+src/analytics/image_analytics/models/ViT/__pycache__
+src/analytics/image_analytics/models/ViT/wandb
+src/analytics/image_analytics/models/ViT/experiments/vit_constellation_20241120_161644/checkpoints
+final doc.pdf
