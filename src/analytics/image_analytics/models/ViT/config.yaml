@@ -1,0 +1,47 @@
+# Data configuration
+data_path: "data/constellation_dataset_1"
+num_labels: 16
+image_size: 224
+batch_size: 32
+num_workers: 4
+
+# Model configuration
+model_name: "google/vit-base-patch16-224-in21k"
+dropout: 0.1
+pretrained: true
+
+# Training configuration
+learning_rate: 2e-5
+weight_decay: 0.01
+num_epochs: 10
+warmup_ratio: 0.1
+gradient_clip: 1.0
+
+# Scheduler configuration
+scheduler:
+  type: "linear_warmup"
+  warmup_epochs: 2
+  min_lr: 1e-6
+
+# Logging configuration
+wandb:
+  use_wandb: true
+  project: "constellation-classification"
+  tags: ["vit", "multi-label"]
+
+# Paths configuration
+output_dir: "experiments"
+checkpoint_dir: "checkpoints"
+log_dir: "logs"
+
+# Augmentation configuration
+augmentation:
+  random_resize_crop: true
+  random_horizontal_flip: true
+  color_jitter:
+    brightness: 0.2
+    contrast: 0.2
+    saturation: 0.2
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]

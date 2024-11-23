@@ -1,0 +1,604 @@
+{
+    "basic_stats": {
+        "total_images": 2344,
+        "num_classes": 16,
+        "split_sizes": {
+            "train": 1641,
+            "valid": 469,
+            "test": 234
+        },
+        "avg_labels_per_image": 2.991468616697136,
+        "min_labels_per_image": 0,
+        "max_labels_per_image": 8
+    },
+    "class_distribution": {
+        "train": {
+            "class_counts": {
+                " aquila": 255,
+                " bootes": 257,
+                " canis_major": 197,
+                " canis_minor": 233,
+                " cassiopeia": 505,
+                " cygnus": 397,
+                " gemini": 246,
+                " leo": 219,
+                " lyra": 396,
+                " moon": 372,
+                " orion": 345,
+                " pleiades": 437,
+                " sagittarius": 180,
+                " scorpius": 198,
+                " taurus": 256,
+                " ursa_major": 416
+            },
+            "class_ratios": {
+                " aquila": 1.9803921568627452,
+                " bootes": 1.9649805447470816,
+                " canis_major": 2.563451776649746,
+                " canis_minor": 2.167381974248927,
+                " cassiopeia": 1.0,
+                " cygnus": 1.2720403022670026,
+                " gemini": 2.0528455284552845,
+                " leo": 2.3059360730593608,
+                " lyra": 1.2752525252525253,
+                " moon": 1.35752688172043,
+                " orion": 1.463768115942029,
+                " pleiades": 1.1556064073226544,
+                " sagittarius": 2.8055555555555554,
+                " scorpius": 2.5505050505050506,
+                " taurus": 1.97265625,
+                " ursa_major": 1.2139423076923077
+            },
+            "imbalance_ratio": 2.8055555555555554
+        },
+        "valid": {
+            "class_counts": {
+                " aquila": 68,
+                " bootes": 76,
+                " canis_major": 69,
+                " canis_minor": 85,
+                " cassiopeia": 152,
+                " cygnus": 99,
+                " gemini": 92,
+                " leo": 70,
+                " lyra": 113,
+                " moon": 111,
+                " orion": 99,
+                " pleiades": 133,
+                " sagittarius": 48,
+                " scorpius": 60,
+                " taurus": 83,
+                " ursa_major": 122
+            },
+            "class_ratios": {
+                " aquila": 2.235294117647059,
+                " bootes": 2.0,
+                " canis_major": 2.2028985507246377,
+                " canis_minor": 1.7882352941176471,
+                " cassiopeia": 1.0,
+                " cygnus": 1.5353535353535352,
+                " gemini": 1.6521739130434783,
+                " leo": 2.1714285714285713,
+                " lyra": 1.345132743362832,
+                " moon": 1.3693693693693694,
+                " orion": 1.5353535353535352,
+                " pleiades": 1.1428571428571428,
+                " sagittarius": 3.1666666666666665,
+                " scorpius": 2.533333333333333,
+                " taurus": 1.8313253012048192,
+                " ursa_major": 1.2459016393442623
+            },
+            "imbalance_ratio": 3.1666666666666665
+        },
+        "test": {
+            "class_counts": {
+                " aquila": 31,
+                " bootes": 34,
+                " canis_major": 33,
+                " canis_minor": 37,
+                " cassiopeia": 81,
+                " cygnus": 54,
+                " gemini": 40,
+                " leo": 36,
+                " lyra": 52,
+                " moon": 42,
+                " orion": 49,
+                " pleiades": 74,
+                " sagittarius": 20,
+                " scorpius": 22,
+                " taurus": 39,
+                " ursa_major": 69
+            },
+            "class_ratios": {
+                " aquila": 2.6129032258064515,
+                " bootes": 2.3823529411764706,
+                " canis_major": 2.4545454545454546,
+                " canis_minor": 2.189189189189189,
+                " cassiopeia": 1.0,
+                " cygnus": 1.5,
+                " gemini": 2.025,
+                " leo": 2.25,
+                " lyra": 1.5576923076923077,
+                " moon": 1.9285714285714286,
+                " orion": 1.653061224489796,
+                " pleiades": 1.0945945945945945,
+                " sagittarius": 4.05,
+                " scorpius": 3.6818181818181817,
+                " taurus": 2.076923076923077,
+                " ursa_major": 1.173913043478261
+            },
+            "imbalance_ratio": 4.05
+        }
+    },
+    "label_correlations": {
+        "correlation_matrix": {
+            " aquila": {
+                " aquila": 1.0,
+                " bootes": 0.39370233919466996,
+                " canis_major": -0.15843020769269003,
+                " canis_minor": -0.1744878165679693,
+                " cassiopeia": -0.2859861481724731,
+                " cygnus": 0.5589637845476716,
+                " gemini": -0.18012289763022876,
+                " leo": -0.034778189829105445,
+                " lyra": 0.7605461248181216,
+                " moon": 0.12933814394217183,
+                " orion": -0.22130718897843882,
+                " pleiades": -0.11380788167581213,
+                " sagittarius": 0.8183190652326569,
+                " scorpius": 0.4866204238300769,
+                " taurus": -0.08706066259334731,
+                " ursa_major": -0.2499580316394302
+            },
+            " bootes": {
+                " aquila": 0.39370233919466996,
+                " bootes": 1.0,
+                " canis_major": -0.019874818672964086,
+                " canis_minor": 0.2138192834876808,
+                " cassiopeia": -0.28731284327302764,
+                " cygnus": 0.0541298745723036,
+                " gemini": 0.1994974197765101,
+                " leo": 0.600067178603332,
+                " lyra": 0.33693631866799184,
+                " moon": 0.15113958221880128,
+                " orion": -0.11123086166378982,
+                " pleiades": -0.25961273450342987,
+                " sagittarius": 0.5194362563423579,
+                " scorpius": 0.8596089190971119,
+                " taurus": -0.12981397522925844,
+                " ursa_major": -0.2511175916322457
+            },
+            " canis_major": {
+                " aquila": -0.15843020769269003,
+                " bootes": -0.019874818672964086,
+                " canis_major": 1.0,
+                " canis_minor": 0.8059103976739734,
+                " cassiopeia": -0.24626689790253187,
+                " cygnus": -0.2086577786756708,
+                " gemini": 0.8428022252210177,
+                " leo": 0.3512554002255573,
+                " lyra": -0.20831111029666638,
+                " moon": 0.21647761226376083,
+                " orion": 0.7158836928163468,
+                " pleiades": 0.4773531444393543,
+                " sagittarius": -0.12964645946369788,
+                " scorpius": -0.13681979836197833,
+                " taurus": 0.7816146452280964,
+                " ursa_major": -0.21524255440701218
+            },
+            " canis_minor": {
+                " aquila": -0.1744878165679693,
+                " bootes": 0.2138192834876808,
+                " canis_major": 0.8059103976739734,
+                " canis_minor": 1.0,
+                " cassiopeia": -0.27122714748522303,
+                " cygnus": -0.22980617611549156,
+                " gemini": 0.9687153541476557,
+                " leo": 0.5642539854442771,
+                " lyra": -0.22942437134854407,
+                " moon": 0.21759018595357285,
+                " orion": 0.5570695925388488,
+                " pleiades": 0.33554302557951393,
+                " sagittarius": -0.1427867069483883,
+                " scorpius": -0.03276743713453769,
+                " taurus": 0.6142004284614769,
+                " ursa_major": -0.23705834826551658
+            },
+            " cassiopeia": {
+                " aquila": -0.2859861481724731,
+                " bootes": -0.28731284327302764,
+                " canis_major": -0.24626689790253187,
+                " canis_minor": -0.27122714748522303,
+                " cassiopeia": 1.0,
+                " cygnus": -0.14543092591502169,
+                " gemini": -0.27998642359072223,
+                " leo": -0.2616548460351449,
+                " lyra": -0.3482568385291528,
+                " moon": -0.2979247777056876,
+                " orion": -0.34400406151688756,
+                " pleiades": -0.20156162867219618,
+                " sagittarius": -0.2340279174419859,
+                " scorpius": -0.24697668264864514,
+                " taurus": -0.2866497843114179,
+                " ursa_major": 0.28219602530499754
+            },
+            " cygnus": {
+                " aquila": 0.5589637845476716,
+                " bootes": 0.0541298745723036,
+                " canis_major": -0.2086577786756708,
+                " canis_minor": -0.22980617611549156,
+                " cassiopeia": -0.14543092591502169,
+                " cygnus": 1.0,
+                " gemini": -0.23722776265654566,
+                " leo": -0.22169572694673037,
+                " lyra": 0.6391730701653899,
+                " moon": -0.03057503023734666,
+                " orion": -0.20067330131558966,
+                " pleiades": -0.07314529398001267,
+                " sagittarius": 0.3891087821762196,
+                " scorpius": 0.12275068320150662,
+                " taurus": 0.015949089289277928,
+                " ursa_major": 0.14510068577241894
+            },
+            " gemini": {
+                " aquila": -0.18012289763022876,
+                " bootes": 0.1994974197765101,
+                " canis_major": 0.8428022252210177,
+                " canis_minor": 0.9687153541476557,
+                " cassiopeia": -0.27998642359072223,
+                " cygnus": -0.23722776265654566,
+                " gemini": 1.0,
+                " leo": 0.5429864238687808,
+                " lyra": -0.23683362751115636,
+                " moon": 0.23742600887920315,
+                " orion": 0.5876819970426185,
+                " pleiades": 0.36490982667784155,
+                " sagittarius": -0.14739800121576638,
+                " scorpius": -0.04025843468199196,
+                " taurus": 0.6521471520171884,
+                " ursa_major": -0.24471414358255594
+            },
+            " leo": {
+                " aquila": -0.034778189829105445,
+                " bootes": 0.600067178603332,
+                " canis_major": 0.3512554002255573,
+                " canis_minor": 0.5642539854442771,
+                " cassiopeia": -0.2616548460351449,
+                " cygnus": -0.22169572694673037,
+                " gemini": 0.5429864238687808,
+                " leo": 1.0,
+                " lyra": -0.011928465635887965,
+                " moon": 0.15131470361488492,
+                " orion": 0.1933134769758309,
+                " pleiades": -0.0012969806173454626,
+                " sagittarius": 0.01707690344583724,
+                " scorpius": 0.38826406326772445,
+                " taurus": 0.20166446286148834,
+                " ursa_major": -0.22869195134730752
+            },
+            " lyra": {
+                " aquila": 0.7605461248181216,
+                " bootes": 0.33693631866799184,
+                " canis_major": -0.20831111029666638,
+                " canis_minor": -0.22942437134854407,
+                " cassiopeia": -0.3482568385291528,
+                " cygnus": 0.6391730701653899,
+                " gemini": -0.23683362751115636,
+                " leo": -0.011928465635887965,
+                " lyra": 1.0,
+                " moon": 0.07561714567391607,
+                " orion": -0.2909845724759464,
+                " pleiades": -0.20767316404736727,
+                " sagittarius": 0.6223693939274859,
+                " scorpius": 0.43818979248424245,
+                " taurus": -0.14827178292319562,
+                " ursa_major": 0.03801760602517867
+            },
+            " moon": {
+                " aquila": 0.12933814394217183,
+                " bootes": 0.15113958221880128,
+                " canis_major": 0.21647761226376083,
+                " canis_minor": 0.21759018595357285,
+                " cassiopeia": -0.2979247777056876,
+                " cygnus": -0.03057503023734666,
+                " gemini": 0.23742600887920315,
+                " leo": 0.15131470361488492,
+                " lyra": 0.07561714567391607,
+                " moon": 1.0,
+                " orion": 0.0635490445934722,
+                " pleiades": 0.05247253643420088,
+                " sagittarius": 0.0800871036380028,
+                " scorpius": 0.1390313592846291,
+                " taurus": 0.20042205759773354,
+                " ursa_major": -0.2920943210795967
+            },
+            " orion": {
+                " aquila": -0.22130718897843882,
+                " bootes": -0.11123086166378982,
+                " canis_major": 0.7158836928163468,
+                " canis_minor": 0.5570695925388488,
+                " cassiopeia": -0.34400406151688756,
+                " cygnus": -0.20067330131558966,
+                " gemini": 0.5876819970426185,
+                " leo": 0.1933134769758309,
+                " lyra": -0.2909845724759464,
+                " moon": 0.0635490445934722,
+                " orion": 1.0,
+                " pleiades": 0.36244159913674445,
+                " sagittarius": -0.1810998920141033,
+                " scorpius": -0.19112014945293324,
+                " taurus": 0.6684158005209364,
+                " ursa_major": -0.30066693314416765
+            },
+            " pleiades": {
+                " aquila": -0.11380788167581213,
+                " bootes": -0.25961273450342987,
+                " canis_major": 0.4773531444393543,
+                " canis_minor": 0.33554302557951393,
+                " cassiopeia": -0.20156162867219618,
+                " cygnus": -0.07314529398001267,
+                " gemini": 0.36490982667784155,
+                " leo": -0.0012969806173454626,
+                " lyra": -0.20767316404736727,
+                " moon": 0.05247253643420088,
+                " orion": 0.36244159913674445,
+                " pleiades": 1.0,
+                " sagittarius": -0.21146505984600658,
+                " scorpius": -0.22316542209033896,
+                " taurus": 0.6490319822910927,
+                " ursa_major": -0.35108000509517145
+            },
+            " sagittarius": {
+                " aquila": 0.8183190652326569,
+                " bootes": 0.5194362563423579,
+                " canis_major": -0.12964645946369788,
+                " canis_minor": -0.1427867069483883,
+                " cassiopeia": -0.2340279174419859,
+                " cygnus": 0.3891087821762196,
+                " gemini": -0.14739800121576638,
+                " leo": 0.01707690344583724,
+                " lyra": 0.6223693939274859,
+                " moon": 0.0800871036380028,
+                " orion": -0.1810998920141033,
+                " pleiades": -0.21146505984600658,
+                " sagittarius": 1.0,
+                " scorpius": 0.6183069761169434,
+                " taurus": -0.15090590720282906,
+                " ursa_major": -0.20454542279857374
+            },
+            " scorpius": {
+                " aquila": 0.4866204238300769,
+                " bootes": 0.8596089190971119,
+                " canis_major": -0.13681979836197833,
+                " canis_minor": -0.03276743713453769,
+                " cassiopeia": -0.24697668264864514,
+                " cygnus": 0.12275068320150662,
+                " gemini": -0.04025843468199196,
+                " leo": 0.38826406326772445,
+                " lyra": 0.43818979248424245,
+                " moon": 0.1390313592846291,
+                " orion": -0.19112014945293324,
+                " pleiades": -0.22316542209033896,
+                " sagittarius": 0.6183069761169434,
+                " scorpius": 1.0,
+                " taurus": -0.1592555313930784,
+                " ursa_major": -0.21586292150926498
+            },
+            " taurus": {
+                " aquila": -0.08706066259334731,
+                " bootes": -0.12981397522925844,
+                " canis_major": 0.7816146452280964,
+                " canis_minor": 0.6142004284614769,
+                " cassiopeia": -0.2866497843114179,
+                " cygnus": 0.015949089289277928,
+                " gemini": 0.6521471520171884,
+                " leo": 0.20166446286148834,
+                " lyra": -0.14827178292319562,
+                " moon": 0.20042205759773354,
+                " orion": 0.6684158005209364,
+                " pleiades": 0.6490319822910927,
+                " sagittarius": -0.15090590720282906,
+                " scorpius": -0.1592555313930784,
+                " taurus": 1.0,
+                " ursa_major": -0.2505380638685275
+            },
+            " ursa_major": {
+                " aquila": -0.2499580316394302,
+                " bootes": -0.2511175916322457,
+                " canis_major": -0.21524255440701218,
+                " canis_minor": -0.23705834826551658,
+                " cassiopeia": 0.28219602530499754,
+                " cygnus": 0.14510068577241894,
+                " gemini": -0.24471414358255594,
+                " leo": -0.22869195134730752,
+                " lyra": 0.03801760602517867,
+                " moon": -0.2920943210795967,
+                " orion": -0.30066693314416765,
+                " pleiades": -0.35108000509517145,
+                " sagittarius": -0.20454542279857374,
+                " scorpius": -0.21586292150926498,
+                " taurus": -0.2505380638685275,
+                " ursa_major": 1.0
+            }
+        },
+        "high_correlations": [
+            {
+                "class1": " aquila",
+                "class2": " cygnus",
+                "correlation": 0.5589637845476716
+            },
+            {
+                "class1": " aquila",
+                "class2": " lyra",
+                "correlation": 0.7605461248181216
+            },
+            {
+                "class1": " aquila",
+                "class2": " sagittarius",
+                "correlation": 0.8183190652326569
+            },
+            {
+                "class1": " bootes",
+                "class2": " leo",
+                "correlation": 0.600067178603332
+            },
+            {
+                "class1": " bootes",
+                "class2": " sagittarius",
+                "correlation": 0.5194362563423579
+            },
+            {
+                "class1": " bootes",
+                "class2": " scorpius",
+                "correlation": 0.8596089190971119
+            },
+            {
+                "class1": " canis_major",
+                "class2": " canis_minor",
+                "correlation": 0.8059103976739734
+            },
+            {
+                "class1": " canis_major",
+                "class2": " gemini",
+                "correlation": 0.8428022252210177
+            },
+            {
+                "class1": " canis_major",
+                "class2": " orion",
+                "correlation": 0.7158836928163468
+            },
+            {
+                "class1": " canis_major",
+                "class2": " taurus",
+                "correlation": 0.7816146452280964
+            },
+            {
+                "class1": " canis_minor",
+                "class2": " gemini",
+                "correlation": 0.9687153541476557
+            },
+            {
+                "class1": " canis_minor",
+                "class2": " leo",
+                "correlation": 0.5642539854442771
+            },
+            {
+                "class1": " canis_minor",
+                "class2": " orion",
+                "correlation": 0.5570695925388488
+            },
+            {
+                "class1": " canis_minor",
+                "class2": " taurus",
+                "correlation": 0.6142004284614769
+            },
+            {
+                "class1": " cygnus",
+                "class2": " lyra",
+                "correlation": 0.6391730701653899
+            },
+            {
+                "class1": " gemini",
+                "class2": " leo",
+                "correlation": 0.5429864238687808
+            },
+            {
+                "class1": " gemini",
+                "class2": " orion",
+                "correlation": 0.5876819970426185
+            },
+            {
+                "class1": " gemini",
+                "class2": " taurus",
+                "correlation": 0.6521471520171884
+            },
+            {
+                "class1": " lyra",
+                "class2": " sagittarius",
+                "correlation": 0.6223693939274859
+            },
+            {
+                "class1": " orion",
+                "class2": " taurus",
+                "correlation": 0.6684158005209364
+            },
+            {
+                "class1": " pleiades",
+                "class2": " taurus",
+                "correlation": 0.6490319822910927
+            },
+            {
+                "class1": " sagittarius",
+                "class2": " scorpius",
+                "correlation": 0.6183069761169434
+            }
+        ]
+    },
+    "image_properties": {
+        "width_stats": {
+            "mean": 640.0,
+            "std": 0.0,
+            "min": 640.0,
+            "max": 640.0
+        },
+        "height_stats": {
+            "mean": 640.0,
+            "std": 0.0,
+            "min": 640.0,
+            "max": 640.0
+        },
+        "aspect_ratio_stats": {
+            "mean": 1.0,
+            "std": 0.0
+        },
+        "format_distribution": {
+            "JPEG": 100
+        },
+        "intensity_stats": {
+            "mean_rgb": [
+                11.677621142578127,
+                13.40045625,
+                19.826007373046878
+            ],
+            "std_rgb": [
+                11.503821877693563,
+                11.793741355923373,
+                12.834855129753342
+            ]
+        }
+    },
+    "recommendations": {
+        "image_size": {
+            "target_size": 224,
+            "reasoning": "Standard input size compatible with both CNN and ViT architectures"
+        },
+        "class_weights": {
+            " aquila": 1.9803921568627452,
+            " bootes": 1.9649805447470816,
+            " canis_major": 2.563451776649746,
+            " canis_minor": 2.167381974248927,
+            " cassiopeia": 1.0,
+            " cygnus": 1.2720403022670026,
+            " gemini": 2.0528455284552845,
+            " leo": 2.3059360730593608,
+            " lyra": 1.2752525252525253,
+            " moon": 1.35752688172043,
+            " orion": 1.463768115942029,
+            " pleiades": 1.1556064073226544,
+            " sagittarius": 2.8055555555555554,
+            " scorpius": 2.5505050505050506,
+            " taurus": 1.97265625,
+            " ursa_major": 1.2139423076923077
+        },
+        "augmentation": {
+            "recommended_techniques": [
+                "random_horizontal_flip",
+                "random_rotation",
+                "random_resized_crop",
+                "color_jitter",
+                "gaussian_noise"
+            ],
+            "intensity": "moderate"
+        }
+    }
+}

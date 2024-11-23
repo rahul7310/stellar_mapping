@@ -1,0 +1,41 @@
+2024-11-20 14:55:19,273 - INFO - Starting pipeline execution
+2024-11-20 14:55:19,280 - INFO - Running data analysis...
+2024-11-20 14:55:20,623 - INFO - Setting up data module...
+2024-11-20 14:55:20,645 - INFO - Creating model...
+2024-11-20 14:55:21,005 - INFO - Starting training...
+2024-11-20 14:56:11,343 - INFO - Epoch 0
+2024-11-20 14:56:11,343 - INFO - Train metrics: {'exact_match': 0.0, 'mean_ap': 0.4145868026475191, 'hamming_loss': 0.5016850490196079, 'subset_accuracy': 0.0}
+2024-11-20 14:56:11,343 - INFO - Val metrics: {'exact_match': 0.0, 'mean_ap': 0.35767286959241723, 'hamming_loss': 0.45642324093816633, 'subset_accuracy': 0.0}
+2024-11-20 14:56:11,591 - INFO - Saved best model with validation MAP: 0.3577
+2024-11-20 14:57:00,501 - INFO - Epoch 1
+2024-11-20 14:57:00,501 - INFO - Train metrics: {'exact_match': 0.023284313725490197, 'mean_ap': 0.6498989904374403, 'hamming_loss': 0.2915517769607843, 'subset_accuracy': 0.023284313725490197}
+2024-11-20 14:57:00,501 - INFO - Val metrics: {'exact_match': 0.10660980810234541, 'mean_ap': 0.7856525490591131, 'hamming_loss': 0.12846481876332622, 'subset_accuracy': 0.10660980810234541}
+2024-11-20 14:57:00,772 - INFO - Saved best model with validation MAP: 0.7857
+2024-11-20 14:57:49,515 - INFO - Epoch 2
+2024-11-20 14:57:49,515 - INFO - Train metrics: {'exact_match': 0.12316176470588236, 'mean_ap': 0.7699610130166415, 'hamming_loss': 0.1595435049019608, 'subset_accuracy': 0.12316176470588236}
+2024-11-20 14:57:49,515 - INFO - Val metrics: {'exact_match': 0.10874200426439233, 'mean_ap': 0.628211393416998, 'hamming_loss': 0.14818763326226012, 'subset_accuracy': 0.10874200426439233}
+2024-11-20 14:58:38,296 - INFO - Epoch 3
+2024-11-20 14:58:38,296 - INFO - Train metrics: {'exact_match': 0.16727941176470587, 'mean_ap': 0.8124215899452244, 'hamming_loss': 0.13809742647058823, 'subset_accuracy': 0.16727941176470587}
+2024-11-20 14:58:38,296 - INFO - Val metrics: {'exact_match': 0.08102345415778252, 'mean_ap': 0.7123759175569637, 'hamming_loss': 0.11873667377398721, 'subset_accuracy': 0.08102345415778252}
+2024-11-20 14:59:28,012 - INFO - Epoch 4
+2024-11-20 14:59:28,013 - INFO - Train metrics: {'exact_match': 0.27267156862745096, 'mean_ap': 0.8502835476512057, 'hamming_loss': 0.10064338235294118, 'subset_accuracy': 0.27267156862745096}
+2024-11-20 14:59:28,013 - INFO - Val metrics: {'exact_match': 0.1535181236673774, 'mean_ap': 0.753307055615158, 'hamming_loss': 0.09768123667377399, 'subset_accuracy': 0.1535181236673774}
+2024-11-20 15:00:17,512 - INFO - Epoch 5
+2024-11-20 15:00:17,512 - INFO - Train metrics: {'exact_match': 0.29534313725490197, 'mean_ap': 0.8864687952383264, 'hamming_loss': 0.08896292892156862, 'subset_accuracy': 0.29534313725490197}
+2024-11-20 15:00:17,512 - INFO - Val metrics: {'exact_match': 0.13646055437100213, 'mean_ap': 0.7775369859844806, 'hamming_loss': 0.10860874200426439, 'subset_accuracy': 0.13646055437100213}
+2024-11-20 15:01:06,705 - INFO - Epoch 6
+2024-11-20 15:01:06,705 - INFO - Train metrics: {'exact_match': 0.35232843137254904, 'mean_ap': 0.9037198560384396, 'hamming_loss': 0.07153799019607843, 'subset_accuracy': 0.35232843137254904}
+2024-11-20 15:01:06,705 - INFO - Val metrics: {'exact_match': 0.18336886993603413, 'mean_ap': 0.8275072900032922, 'hamming_loss': 0.08089019189765459, 'subset_accuracy': 0.18336886993603413}
+2024-11-20 15:01:06,978 - INFO - Saved best model with validation MAP: 0.8275
+2024-11-20 15:01:56,106 - INFO - Epoch 7
+2024-11-20 15:01:56,106 - INFO - Train metrics: {'exact_match': 0.33517156862745096, 'mean_ap': 0.9009953569840103, 'hamming_loss': 0.07762714460784313, 'subset_accuracy': 0.33517156862745096}
+2024-11-20 15:01:56,106 - INFO - Val metrics: {'exact_match': 0.07889125799573561, 'mean_ap': 0.5236171596887786, 'hamming_loss': 0.18097014925373134, 'subset_accuracy': 0.07889125799573561}
+2024-11-20 15:02:45,174 - INFO - Epoch 8
+2024-11-20 15:02:45,174 - INFO - Train metrics: {'exact_match': 0.36825980392156865, 'mean_ap': 0.9125420494274988, 'hamming_loss': 0.07084865196078431, 'subset_accuracy': 0.36825980392156865}
+2024-11-20 15:02:45,174 - INFO - Val metrics: {'exact_match': 0.31130063965884863, 'mean_ap': 0.8519546669866499, 'hamming_loss': 0.06942963752665245, 'subset_accuracy': 0.31130063965884863}
+2024-11-20 15:02:45,441 - INFO - Saved best model with validation MAP: 0.8520
+2024-11-20 15:03:34,604 - INFO - Epoch 9
+2024-11-20 15:03:34,604 - INFO - Train metrics: {'exact_match': 0.4215686274509804, 'mean_ap': 0.9290811821665178, 'hamming_loss': 0.06211703431372549, 'subset_accuracy': 0.4215686274509804}
+2024-11-20 15:03:34,604 - INFO - Val metrics: {'exact_match': 0.326226012793177, 'mean_ap': 0.8297801397055129, 'hamming_loss': 0.06529850746268656, 'subset_accuracy': 0.326226012793177}
+2024-11-20 15:03:34,656 - INFO - Running visualization pipeline...
+2024-11-20 15:03:55,165 - INFO - Pipeline execution completed successfully
