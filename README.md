@@ -83,8 +83,9 @@ stellar_mapping/
 3. Ensemble Architecture (CNN + ViT)
 4. EfficientNet Architecture
 
-**Trained Models and Evaluation link** [link](https://drive.google.com/drive/folders/1wNStLgkJYmBll8tsK3iv_dr7QcVyNklY?usp=sharing) 
-*Note: Only CU Boulder staff and students can access the above link for now
+**Trained Models and Evaluation link** 
+- [link](https://drive.google.com/drive/folders/1wNStLgkJYmBll8tsK3iv_dr7QcVyNklY?usp=sharing) 
+*Note: Only CU Boulder staff and students can access the link for now
 
 
 ## Attributions
