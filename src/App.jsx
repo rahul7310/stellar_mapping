@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Introduction from "./Components/Introduction";
 import Team from "./Components/Team";
 import DataExploration from "./Components/DataExploration";
+import ModelsImplemented from "./Components/ModelsImplemented";
 import { Stars } from "@react-three/drei";
 import RocketShipExperience from "./Experiences/RocketShipExperience";
 import StarsAnimated from "./Experiences/StarFall";
@@ -69,22 +70,28 @@ export default function App() {
         <div
           style={{
             width: "100%",
-            height: "50%",
+            height: "100%",
             marginTop: "50px",
-            overflow: "auto",
+            // overflow: "auto",
           }}
         >
-          <Canvas
-            shadows
-            camera={{
-              fov: 45,
-              near: 0.1,
-              far: 2000,
-              position: [-3, 1.5, 4],
-            }}
-          >
-            <RoverExperience />
-          </Canvas>
+          <div style={{ height: "50vh" }}>
+            <Canvas
+              shadows
+              camera={{
+                fov: 45,
+                near: 0.1,
+                far: 2000,
+                position: [-3, 1.5, 4],
+              }}
+            >
+              <RoverExperience />
+            </Canvas>
+          </div>
+      
+          <div> {/* Content will follow the Canvas */}
+            <ModelsImplemented />
+          </div>
         </div>
       ) : (
         <></>
