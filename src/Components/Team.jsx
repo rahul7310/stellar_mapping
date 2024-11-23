@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import styled from "styled-components";
 
 export default function Team() {
@@ -40,14 +41,28 @@ export default function Team() {
             Beyond tech, she is a trained Carnatic singer, a regional-level
             chess player, and an amateur guitarist.
           </p>
-          <a
-          href="https://www.linkedin.com/in/tatasainandini/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "lightblue", marginTop: "10px" }}
-        >
-          LinkedIn
-        </a>
+          {/* <a
+            href="https://www.linkedin.com/in/tatasainandini/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "lightblue", marginTop: "10px" }}
+          >
+            LinkedIn
+          </a> */}
+          <Button
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/tatasainandini/",
+                "_blank"
+              )
+            }
+          >
+            <img
+              style={{ width: 18, height: 18 }}
+              src="/icons/Linkedin_logo.png"
+              alt="nandini linkedin"
+            />
+          </Button>
         </BioCard>
         <BioCard>
           <img
@@ -61,7 +76,7 @@ export default function Team() {
             alt="Siva"
             className="profile-picture"
           />
-          <h4 style={{ color: "ivory" }}>Sivakumar</h4>
+          <h4 style={{ color: "ivory" }}>Sivakumar Ramakrishnan</h4>
           <p style={{ marginTop: "10px", textAlign: "center", color: "white" }}>
             Exploring and learning new stuffs! Physics is my favourite, Math is
             my queen, Programming since 2018. Having work experience in the
@@ -76,14 +91,29 @@ export default function Team() {
             I was also a part of the research work involving multimodality and
             Vision Language Models.
           </p>
-          <a
-          href="https://www.linkedin.com/in/siva-kumar-5b2527190/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "lightblue", marginTop: "10px" }}
-        >
-          LinkedIn
-        </a>
+          {/* <a
+            href="https://www.linkedin.com/in/siva-kumar-5b2527190/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "lightblue", marginTop: "10px" }}
+          >
+            LinkedIn
+          </a> */}
+
+          <Button
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/siva-kumar-5b2527190/",
+                "_blank"
+              )
+            }
+          >
+            <img
+              style={{ width: 18, height: 18 }}
+              src="/icons/Linkedin_logo.png"
+              alt="siva linkedin"
+            />
+          </Button>
         </BioCard>
         <BioCard>
           <img
@@ -110,14 +140,26 @@ export default function Team() {
             working as a Software Engineer across industries. Passionate about
             Math and a keen interest in data science. Enjoy building things.
           </p>
-          <a
-          href="https://github.com/rahul7310"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "lightblue", marginTop: "10px" }}
-        >
-          GitHub
-        </a>
+          {/* <a
+            href="https://github.com/rahul7310"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "lightblue", marginTop: "10px" }}
+          >
+            GitHub
+          </a> */}
+
+          <Button
+            onClick={() =>
+              window.open("https://github.com/rahul7310", "_blank")
+            }
+          >
+            <img
+              style={{ width: 30, height: 30 }}
+              src="/icons/github.svg"
+              alt="rahul github"
+            />
+          </Button>
         </BioCard>
       </TeamContainer>
     </>

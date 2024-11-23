@@ -2,9 +2,9 @@ node_modules/
 package-lock.json
 .DS_Store
 vllm/
-data/
 src/analytics/image_analytics/config.ini
 data/
+src/analytics/text_analytics/src/stellar_llm_generation/.env
 .idea
 src/analytics/text_analytics/src/stellar_llm_generation/.env
 src/analytics/image_analytics/models/CNN/__pycache__
