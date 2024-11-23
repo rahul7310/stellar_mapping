@@ -1,0 +1,118 @@
+augmentation:
+  color_jitter:
+    brightness: 0.2
+    contrast: 0.2
+    hue: 0.1
+    saturation: 0.2
+  probability:
+    color_jitter: 0.3
+    horizontal_flip: 0.5
+    rotate: 0.3
+    vertical_flip: 0.0
+  random_crop:
+    ratio:
+    - 0.75
+    - 1.33
+    scale:
+    - 0.8
+    - 1.0
+    size: 224
+  resize_size: 224
+data_path: data/constellation_dataset_1
+device: cuda
+evaluation:
+  batch_size: 16
+  conf_thresh: 0.5
+  metrics:
+  - exact_match
+  - mean_ap
+  - hamming_loss
+  - per_class_metrics
+  - confusion_matrix
+  num_workers: 4
+  save_predictions: true
+logging:
+  checkpoint:
+    save_best: true
+    save_frequency: 5
+    save_last: true
+  project_name: ensemble_constellations
+  save_dir: src\analytics\image_analytics\models\Ensemble\experiments\constellation_ensemble
+  use_wandb: true
+  wandb:
+    entity: Arsive02
+    project_name: ensemble_constellations
+    tags:
+    - ensemble
+    - multi-label
+model:
+  cnn_config:
+    backbone: resnet50
+    dropout_rate: 0.5
+    freeze_layers: 6
+    pretrained: true
+  ensemble_dropout: 0.3
+  fusion:
+    feature_dim: 512
+    method: weighted_sum
+    use_attention: true
+  image_size: 224
+  num_classes: 16
+  vit_config:
+    dropout_rate: 0.1
+    freeze_layers: 8
+    model_name: google/vit-base-patch16-224-in21k
+    pretrained: true
+training:
+  batch_size: 8
+  cnn_lr: 1e-4
+  ensemble_lr: 1e-4
+  gradient_clip: 1.0
+  loss_weights:
+    cnn: 0.5
+    ensemble: 1.0
+    fusion: 0.5
+    vit: 0.5
+  min_delta: 0.001
+  num_epochs: 10
+  num_workers: 4
+  patience: 5
+  scheduler:
+    max_lr: 1e-3
+    min_lr: 1e-6
+    type: cosine
+    warmup_epochs: 2
+  vit_lr: 2e-5
+  weight_decay: 1e-5
+validation:
+  frequency: 1
+  metrics:
+  - mean_ap
+  - exact_match
+  - hamming_loss
+  - per_class_f1
+visualization:
+  class_colors:
+    aquila: '#FF6B6B'
+    bootes: '#4ECDC4'
+    canis_major: '#45B7D1'
+    canis_minor: '#96CEB4'
+    cassiopeia: '#EDD834'
+    cygnus: '#D4A5A5'
+    gemini: '#9B59B6'
+    leo: '#E67E22'
+    lyra: '#2ECC71'
+    moon: '#F1C40F'
+    orion: '#3498DB'
+    pleiades: '#1ABC9C'
+    sagittarius: '#E74C3C'
+    scorpius: '#8E44AD'
+    taurus: '#D35400'
+    ursa_major: '#27AE60'
+  plot_types:
+  - roc_curves
+  - pr_curves
+  - confusion_matrices
+  - model_comparison
+  - class_distribution
+  - predictions_heatmap

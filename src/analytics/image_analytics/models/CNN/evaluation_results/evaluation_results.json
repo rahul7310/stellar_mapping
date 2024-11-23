@@ -1,0 +1,322 @@
+{
+    "overall_metrics": {
+        "exact_match": 0.26495726495726496,
+        "hamming_loss": 0.07451923076923077,
+        "mean_average_precision": 0.8321208112874778,
+        "subset_accuracy": 0.26495726495726496,
+        "micro_precision": 0.9800884955752213,
+        "micro_recall": 0.6213183730715287,
+        "micro_f1": 0.7605150214592274,
+        "macro_precision": 0.9188448180655662,
+        "macro_recall": 0.7364141732272751,
+        "macro_f1": 0.7812177072736561
+    },
+    "per_class_metrics": {
+        " aquila": {
+            "precision": 0.9666666666666667,
+            "recall": 0.9354838709677419,
+            "f1_score": 0.9508196721311475,
+            "roc_auc": 0.999523279834737,
+            "average_precision": 0.9968760839403398,
+            "confusion_matrix": [
+                [
+                    202,
+                    1
+                ],
+                [
+                    2,
+                    29
+                ]
+            ],
+            "support": 31
+        },
+        " bootes": {
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "f1_score": 0.9850746268656716,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    200,
+                    0
+                ],
+                [
+                    1,
+                    33
+                ]
+            ],
+            "support": 34
+        },
+        " canis_major": {
+            "precision": 0.9705882352941176,
+            "recall": 1.0,
+            "f1_score": 0.9850746268656716,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    200,
+                    1
+                ],
+                [
+                    0,
+                    33
+                ]
+            ],
+            "support": 33
+        },
+        " canis_minor": {
+            "precision": 0.925,
+            "recall": 1.0,
+            "f1_score": 0.961038961038961,
+            "roc_auc": 0.9991768418164357,
+            "average_precision": 0.9954214373551665,
+            "confusion_matrix": [
+                [
+                    194,
+                    3
+                ],
+                [
+                    0,
+                    37
+                ]
+            ],
+            "support": 37
+        },
+        " cassiopeia": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "roc_auc": 0.8795287662390059,
+            "average_precision": 0.7029687613466913,
+            "confusion_matrix": [
+                [
+                    153,
+                    0
+                ],
+                [
+                    81,
+                    0
+                ]
+            ],
+            "support": 81
+        },
+        " cygnus": {
+            "precision": 1.0,
+            "recall": 0.4444444444444444,
+            "f1_score": 0.6153846153846154,
+            "roc_auc": 0.8949588477366255,
+            "average_precision": 0.7905678826497121,
+            "confusion_matrix": [
+                [
+                    180,
+                    0
+                ],
+                [
+                    30,
+                    24
+                ]
+            ],
+            "support": 54
+        },
+        " gemini": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    194,
+                    0
+                ],
+                [
+                    0,
+                    40
+                ]
+            ],
+            "support": 40
+        },
+        " leo": {
+            "precision": 1.0,
+            "recall": 0.9166666666666666,
+            "f1_score": 0.9565217391304348,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    198,
+                    0
+                ],
+                [
+                    3,
+                    33
+                ]
+            ],
+            "support": 36
+        },
+        " lyra": {
+            "precision": 1.0,
+            "recall": 0.5961538461538461,
+            "f1_score": 0.7469879518072289,
+            "roc_auc": 0.9513947590870667,
+            "average_precision": 0.8884255002352274,
+            "confusion_matrix": [
+                [
+                    182,
+                    0
+                ],
+                [
+                    21,
+                    31
+                ]
+            ],
+            "support": 52
+        },
+        " moon": {
+            "precision": 0.9696969696969697,
+            "recall": 0.7619047619047619,
+            "f1_score": 0.8533333333333334,
+            "roc_auc": 0.9924355158730159,
+            "average_precision": 0.969102077852496,
+            "confusion_matrix": [
+                [
+                    191,
+                    1
+                ],
+                [
+                    10,
+                    32
+                ]
+            ],
+            "support": 42
+        },
+        " orion": {
+            "precision": 1.0,
+            "recall": 0.6530612244897959,
+            "f1_score": 0.7901234567901234,
+            "roc_auc": 0.9837837837837837,
+            "average_precision": 0.950436013900867,
+            "confusion_matrix": [
+                [
+                    185,
+                    0
+                ],
+                [
+                    17,
+                    32
+                ]
+            ],
+            "support": 49
+        },
+        " pleiades": {
+            "precision": 1.0,
+            "recall": 0.4864864864864865,
+            "f1_score": 0.6545454545454545,
+            "roc_auc": 0.9341216216216216,
+            "average_precision": 0.8945139458809558,
+            "confusion_matrix": [
+                [
+                    160,
+                    0
+                ],
+                [
+                    38,
+                    36
+                ]
+            ],
+            "support": 74
+        },
+        " sagittarius": {
+            "precision": 0.8695652173913043,
+            "recall": 1.0,
+            "f1_score": 0.9302325581395349,
+            "roc_auc": 0.9990654205607477,
+            "average_precision": 0.9906926406926408,
+            "confusion_matrix": [
+                [
+                    211,
+                    3
+                ],
+                [
+                    0,
+                    20
+                ]
+            ],
+            "support": 20
+        },
+        " scorpius": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    212,
+                    0
+                ],
+                [
+                    0,
+                    22
+                ]
+            ],
+            "support": 22
+        },
+        " taurus": {
+            "precision": 1.0,
+            "recall": 0.9743589743589743,
+            "f1_score": 0.987012987012987,
+            "roc_auc": 1.0,
+            "average_precision": 1.0,
+            "confusion_matrix": [
+                [
+                    195,
+                    0
+                ],
+                [
+                    1,
+                    38
+                ]
+            ],
+            "support": 39
+        },
+        " ursa_major": {
+            "precision": 1.0,
+            "recall": 0.043478260869565216,
+            "f1_score": 0.08333333333333333,
+            "roc_auc": 0.9760210803689066,
+            "average_precision": 0.9372168323004726,
+            "confusion_matrix": [
+                [
+                    165,
+                    0
+                ],
+                [
+                    66,
+                    3
+                ]
+            ],
+            "support": 69
+        }
+    },
+    "thresholds": {
+        " aquila": 0.32785311341285706,
+        " bootes": 0.3693387508392334,
+        " canis_major": 0.6918622255325317,
+        " canis_minor": 0.8784204721450806,
+        " cassiopeia": 0.15044081211090088,
+        " cygnus": 0.18533438444137573,
+        " gemini": 0.6611543893814087,
+        " leo": 0.13858509063720703,
+        " lyra": 0.07930120825767517,
+        " moon": 0.10112596303224564,
+        " orion": 0.06104515120387077,
+        " pleiades": 0.0794660821557045,
+        " sagittarius": 0.7111166715621948,
+        " scorpius": 0.8986497521400452,
+        " taurus": 0.261673241853714,
+        " ursa_major": 0.3897242248058319
+    }
+}
