@@ -10,6 +10,9 @@ import { Stars } from "@react-three/drei";
 import RocketShipExperience from "./Experiences/RocketShipExperience";
 import StarsAnimated from "./Experiences/StarFall";
 import RoverExperience from "./Experiences/RoverExperience";
+import RobotExperience from "./Experiences/RobotExperience";
+import Conclusion from "./Components/Conclusion";
+import { Button } from "@mui/material";
 export default function App() {
   const [selectedTab, setSelectedTab] = useState("Introduction");
 
@@ -88,10 +91,35 @@ export default function App() {
               <RoverExperience />
             </Canvas>
           </div>
-      
-          <div> {/* Content will follow the Canvas */}
+
+          <div>
+            {" "}
+            {/* Content will follow the Canvas */}
             <ModelsImplemented />
           </div>
+        </div>
+      ) : selectedTab === "Conclusion" ? (
+        <div
+          style={{
+            width: "100%",
+            height: "50%",
+            marginTop: "50px",
+            overflow: "auto",
+          }}
+        >
+          {/* <Button>Test</Button> */}
+          <Canvas
+            camera={{
+              fov: 45,
+              near: 0.1,
+              far: 2000,
+              position: [-3, 1.5, 4],
+            }}
+          >
+            <RobotExperience />
+          </Canvas>
+
+          <Conclusion />
         </div>
       ) : (
         <></>
