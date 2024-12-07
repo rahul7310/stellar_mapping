@@ -21,6 +21,7 @@ export default function Conclusion() {
             marginTop: "20px",
           }}
         >
+          <h3 style={{ color: "yellow" }}>Conclusion</h3>
           <p>
             We embarked on this project in an attempt to make astronomy more
             accessible to the public through Data Science. Constellations, rich
@@ -50,15 +51,16 @@ export default function Conclusion() {
             performances.
           </p>
 
+          <h3 style={{ color: "yellow" }}>Potential Applications</h3>
+
           <p>
-            This project has further reinforced our belief in the potential of
-            data science in bridging the gap between complex scientific fields
-            and the general public. It also has the potential to serve as a
-            valuable educational tool for people of all ages, especially in
-            collaboration with planetariums and science centers. It also has the
-            potential to aid in researching more complex concepts in astronomy
-            and can have a larger impact on the broader field of citizen
-            science.
+            This project has strengthened our belief in the power of data
+            science to bridge the gap between complex scientific fields and the
+            general public. It holds great potential as an educational tool for
+            individuals of all ages, particularly when used in collaboration
+            with planetariums and science centers. Furthermore, it can support
+            research into more intricate concepts in astronomy and contribute to
+            the broader field of citizen science.
           </p>
 
           <h3 style={{ color: "yellow" }}>Future Work and Improvements</h3>
