@@ -27,26 +27,28 @@ import img4 from "../../datasets/roboflow_constellation_images/sample/2022-01-22
 import img5 from "../../datasets/roboflow_constellation_images/sample/2022-01-30-00-00-00-s_png_jpg.rf.b5eee58c97e33ef80b95c30a8aad3d23.jpg";
 import img6 from "../../datasets/roboflow_constellation_images/sample/2022-01-30-00-00-00-s_png_jpg.rf.b5eee58c97e33ef80b95c30a8aad3d23.jpg";
 
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 // Custom Card Components
 const Card = ({ children, className = "" }) => (
-  <div className={`bg-gray-900 border border-yellow-400 rounded-lg overflow-hidden ${className}`}>
+  <div
+    className={`bg-gray-900 border border-yellow-400 rounded-lg overflow-hidden ${className}`}
+  >
     {children}
   </div>
 );
 
 const CardHeader = ({ children, className = "" }) => (
-  <div className={`p-4 border-b border-yellow-400 text-yellow-300 font-semibold ${className}`}>
+  <div
+    className={`p-4 border-b border-yellow-400 text-yellow-300 font-semibold ${className}`}
+  >
     {children}
   </div>
 );
 
 const CardContent = ({ children, className = "" }) => (
-  <div className={`p-4 text-gray-200 ${className}`}>
-    {children}
-  </div>
+  <div className={`p-4 text-gray-200 ${className}`}>{children}</div>
 );
 
 const HeadingContainer = styled.div`
@@ -84,19 +86,23 @@ export default function DataExploration() {
   ];
 
   return (
-    <div style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      marginTop: "550px",
-    }}>
-      <div style={{
-        fontFamily: "SpaceGrotesk-VariableFont_wght",
-        color: "ivory",
-        margin: "20px",
-        marginTop: "50px",
-      }}>
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        marginTop: "550px",
+      }}
+    >
+      <div
+        style={{
+          fontFamily: "SpaceGrotesk-VariableFont_wght",
+          color: "ivory",
+          margin: "20px",
+          marginTop: "50px",
+        }}
+      >
         <h2 style={{ margin: "10px", color: "yellow" }}>DATA COLLECTION</h2>
         <div style={{ margin: "10px" }}>
           Data was collected from multiple sources using various methods as
@@ -122,8 +128,8 @@ export default function DataExploration() {
                   starchild.gsfc.nasa.gov
                 </a>{" "}
                 was scraped to get a list of the names of all 88 officially
-                recognised constellations. The list was then used to scrape
-                the images from{" "}
+                recognised constellations. The list was then used to scrape the
+                images from{" "}
                 <a
                   style={{ color: "salmon" }}
                   target="_blank"
@@ -141,7 +147,9 @@ export default function DataExploration() {
               </p>
             </li>
             <li>
-              <HeadingContainer>Constellation mappings using the Stellarium app</HeadingContainer>
+              <HeadingContainer>
+                Constellation mappings using the Stellarium app
+              </HeadingContainer>
               <p>
                 Captured images of each of the constellations using a custom{" "}
                 <a
@@ -190,7 +198,9 @@ export default function DataExploration() {
             />
 
             <li>
-              <HeadingContainer>Instructables Star Recognition</HeadingContainer>
+              <HeadingContainer>
+                Instructables Star Recognition
+              </HeadingContainer>
               The Instructables{" "}
               <a
                 style={{ color: "salmon" }}
@@ -203,10 +213,11 @@ export default function DataExploration() {
               insights into using OpenCV for star recognition.
             </li>
           </ul>
-
           <h2 style={{ color: "yellow" }}>DATA PREPARATION AND ANALYSIS </h2>
           <div>
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.1 Dataset Characteristics</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>
+              2.1 Dataset Characteristics
+            </h3>
             <Card>
               <CardContent>
                 <ul className="list-disc pl-6 space-y-2">
@@ -219,12 +230,16 @@ export default function DataExploration() {
               </CardContent>
             </Card>
 
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.2 Class Distribution Analysis</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>
+              2.2 Class Distribution Analysis
+            </h3>
             <Card>
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-yellow-200 mb-2">Frequently Observed (IR &lt; 1.30):</h4>
+                    <h4 className="text-yellow-200 mb-2">
+                      Frequently Observed (IR &lt; 1.30):
+                    </h4>
                     <ul className="list-disc pl-6">
                       <li>Cassiopeia (IR: 1.00)</li>
                       <li>Pleiades (IR: 1.16)</li>
@@ -233,7 +248,9 @@ export default function DataExploration() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-yellow-200 mb-2">Moderately Represented:</h4>
+                    <h4 className="text-yellow-200 mb-2">
+                      Moderately Represented:
+                    </h4>
                     <ul className="list-disc pl-6">
                       <li>Lyra (IR: 1.28)</li>
                       <li>Moon (IR: 1.36)</li>
@@ -254,12 +271,16 @@ export default function DataExploration() {
               </CardContent>
             </Card>
 
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.3 Data Preprocessing</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>
+              2.3 Data Preprocessing
+            </h3>
             <Card>
               <CardContent>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-yellow-200 mb-2">Spatial Augmentations:</h4>
+                    <h4 className="text-yellow-200 mb-2">
+                      Spatial Augmentations:
+                    </h4>
                     <ul className="list-disc pl-6">
                       <li>Random rotation (±15 degrees, p=0.5)</li>
                       <li>Random 90-degree rotation (p=0.3)</li>
@@ -267,7 +288,9 @@ export default function DataExploration() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-yellow-200 mb-2">Intensity Augmentations:</h4>
+                    <h4 className="text-yellow-200 mb-2">
+                      Intensity Augmentations:
+                    </h4>
                     <div>
                       <p>Stream 1 (p=0.3):</p>
                       <ul className="list-disc pl-6">
@@ -286,43 +309,61 @@ export default function DataExploration() {
             </Card>
 
             <Card>
-                <CardHeader>Augmentation Examples</CardHeader>
-                <CardContent>
-                  <p className="mb-4">
-                    Visual demonstration of our augmentation pipeline showing how a single image is 
-                    transformed using different augmentation techniques. Examples include geometric 
-                    transformations (rotation, flips) and intensity adjustments (brightness, contrast), 
-                    which help improve model robustness.
-                  </p>
-                  <div className="flex justify-center">
-                    <img 
+              <CardHeader>Augmentation Examples</CardHeader>
+              <CardContent>
+                <p className="mb-4">
+                  Visual demonstration of our augmentation pipeline showing how
+                  a single image is transformed using different augmentation
+                  techniques. Examples include geometric transformations
+                  (rotation, flips) and intensity adjustments (brightness,
+                  contrast), which help improve model robustness.
+                </p>
+                <div className="flex justify-center">
+                  {/* <img 
                       src="./Augmentation.png" 
                       style={{ maxWidth: '600px', height: 'auto' }} 
                       alt="Augmentation examples"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
+                    /> */}
+                  <ImageGallery
+                    imagesInfoArray={[{ src: "./Augmentation.png" }]}
+                    columnCount={"auto"}
+                    columnWidth={400}
+                    gapSize={24}
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
-              
-
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.4 Data Visualization</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>
+              2.4 Data Visualization
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Visualization cards */}
               <Card>
                 <CardHeader>Image Count Distribution</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Bar plot showing the distribution of images across different constellation classes. 
-                    Cassiopeia dominates with approximately 500 instances, while Sagittarius represents 
-                    the minority class with around 180 instances. This visualization helps identify class 
-                    imbalance issues in the dataset.
+                    Bar plot showing the distribution of images across different
+                    constellation classes. Cassiopeia dominates with
+                    approximately 500 instances, while Sagittarius represents
+                    the minority class with around 180 instances. This
+                    visualization helps identify class imbalance issues in the
+                    dataset.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./image_count_distribution.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./image_count_distribution.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Image count distribution"
+                    /> */}
+
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./image_count_distribution.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -332,16 +373,24 @@ export default function DataExploration() {
                 <CardHeader>Pixel Intensity Analysis</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Evaluating the average and variability of pixel intensities for each class can reveal 
-                    differences in brightness or contrast between classes. This information can inform 
-                    preprocessing strategies and help optimize model training. The analysis helps identify 
-                    any systematic differences in image characteristics across constellation classes.
+                    Evaluating the average and variability of pixel intensities
+                    for each class can reveal differences in brightness or
+                    contrast between classes. This information can inform
+                    preprocessing strategies and help optimize model training.
+                    The analysis helps identify any systematic differences in
+                    image characteristics across constellation classes.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./MeanPixelIntensity.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./MeanPixelIntensity.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Pixel intensity analysis"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[{ src: "./MeanPixelIntensity.png" }]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -351,18 +400,27 @@ export default function DataExploration() {
                 <CardHeader>Constellation Mapping</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    The constellation map provides a visual representation of the relationships between 
-                    different constellations. By visualizing the proximity and overlap of constellations, 
-                    we can gain insights into their spatial distribution and potential correlations. This 
-                    visualization can be useful for understanding the overall structure of the celestial 
-                    sphere and identifying potential challenges in constellation recognition tasks, such 
-                    as overlapping star patterns or ambiguous boundaries.
+                    The constellation map provides a visual representation of
+                    the relationships between different constellations. By
+                    visualizing the proximity and overlap of constellations, we
+                    can gain insights into their spatial distribution and
+                    potential correlations. This visualization can be useful for
+                    understanding the overall structure of the celestial sphere
+                    and identifying potential challenges in constellation
+                    recognition tasks, such as overlapping star patterns or
+                    ambiguous boundaries.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./ConstellationMapping.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./ConstellationMapping.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Constellation mapping"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[{ src: "./ConstellationMapping.png" }]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -372,18 +430,29 @@ export default function DataExploration() {
                 <CardHeader>Constellation Boundaries</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    This visualization provides a detailed view of the 88 officially recognized constellations, 
-                    outlining their boundaries and highlighting their relative positions in the night sky. 
-                    By clearly delineating the boundaries, this map helps to distinguish between different 
-                    constellations and avoid confusion, especially in areas where star patterns overlap. 
-                    This visualization is a valuable tool for stargazers and astronomers alike, aiding in 
-                    the identification and study of celestial objects.
+                    This visualization provides a detailed view of the 88
+                    officially recognized constellations, outlining their
+                    boundaries and highlighting their relative positions in the
+                    night sky. By clearly delineating the boundaries, this map
+                    helps to distinguish between different constellations and
+                    avoid confusion, especially in areas where star patterns
+                    overlap. This visualization is a valuable tool for
+                    stargazers and astronomers alike, aiding in the
+                    identification and study of celestial objects.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./ConstellationBoundaries.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./ConstellationBoundaries.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Constellation boundaries"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./ConstellationBoundaries.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -393,25 +462,37 @@ export default function DataExploration() {
                 <CardHeader>Color Channel Distribution</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Three histograms showing the distribution of average pixel values for red, green, 
-                    and blue channels. These distributions help understand color biases in the dataset 
+                    Three histograms showing the distribution of average pixel
+                    values for red, green, and blue channels. These
+                    distributions help understand color biases in the dataset
                     and guide preprocessing decisions for color normalization.
                   </p>
                   <div className="flex flex-col items-center space-y-4">
-                    <img 
-                      src="./color_channel_distribution_red.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./color_channel_distribution_red.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Red channel distribution"
                     />
-                    <img 
-                      src="./color_channel_distribution_blue.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    <img
+                      src="./color_channel_distribution_blue.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Blue channel distribution"
                     />
-                    <img 
-                      src="./color_channel_distribution_green.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    <img
+                      src="./color_channel_distribution_green.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Green channel distribution"
+                    /> */}
+
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./color_channel_distribution_red.png" },
+                        { src: "./color_channel_distribution_blue.png" },
+                        { src: "./color_channel_distribution_green.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -421,16 +502,26 @@ export default function DataExploration() {
                 <CardHeader>PCA Visualization</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    A scatter plot of images projected onto their first two principal components. 
-                    This visualization reveals clusters or patterns in the dataset that might not 
-                    be apparent from other plots, helping understand the overall structure and 
+                    A scatter plot of images projected onto their first two
+                    principal components. This visualization reveals clusters or
+                    patterns in the dataset that might not be apparent from
+                    other plots, helping understand the overall structure and
                     variability of the data.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./image_pca_visualization.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./image_pca_visualization.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="PCA visualization"
+                    /> */}
+
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./image_pca_visualization.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -440,20 +531,31 @@ export default function DataExploration() {
                 <CardHeader>Image Statistics</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Distribution plots showing the mean, standard deviation, skewness, and kurtosis 
-                    of pixel values across all images. These statistics help identify outliers and 
-                    understand the overall characteristics of the images, guiding preprocessing decisions.
+                    Distribution plots showing the mean, standard deviation,
+                    skewness, and kurtosis of pixel values across all images.
+                    These statistics help identify outliers and understand the
+                    overall characteristics of the images, guiding preprocessing
+                    decisions.
                   </p>
                   <div className="flex flex-col items-center space-y-4">
-                    <img 
-                      src="./image_statistics_distribution1.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./image_statistics_distribution1.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Image statistics 1"
                     />
-                    <img 
-                      src="./image_statistics_distribution2.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    <img
+                      src="./image_statistics_distribution2.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Image statistics 2"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./image_statistics_distribution1.png" },
+                        { src: "./image_statistics_distribution2.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -463,16 +565,23 @@ export default function DataExploration() {
                 <CardHeader>Image Complexity</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    A histogram showing the distribution of image complexity, measured by the standard 
-                    deviation of pixel values. This helps identify if there's a good mix of simple and 
-                    complex images in the dataset and can guide decisions on data augmentation or 
-                    model complexity.
+                    A histogram showing the distribution of image complexity,
+                    measured by the standard deviation of pixel values. This
+                    helps identify if there's a good mix of simple and complex
+                    images in the dataset and can guide decisions on data
+                    augmentation or model complexity.
                   </p>
                   <div className="flex justify-center">
-                    <img 
-                      src="./image_complexity.png" 
-                      style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <img
+                      src="./image_complexity.png"
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Image complexity"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[{ src: "./image_complexity.png" }]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
@@ -482,53 +591,75 @@ export default function DataExploration() {
                 <CardHeader>Distribution of Labels</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Bar plot showing the distribution of labels across different constellation classes.
-                    The plot helps identify the most common and rarest constellations in the dataset,
-                    which can guide data preprocessing and model training strategies.
+                    Bar plot showing the distribution of labels across different
+                    constellation classes. The plot helps identify the most
+                    common and rarest constellations in the dataset, which can
+                    guide data preprocessing and model training strategies.
                   </p>
                   <div className="flex justify-center">
-                    <img
-
+                    {/* <img
                       src="./label_distribution.png"
-                      style={{ maxWidth: '600px', height: 'auto' }}
+                      style={{ maxWidth: "600px", height: "auto" }}
                       alt="Label distribution"
+                    /> */}
+                    <ImageGallery
+                      imagesInfoArray={[{ src: "./label_distribution.png" }]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
                     />
                   </div>
                 </CardContent>
               </Card>
 
-              <h3 style={{ color: "yellow", marginTop: "20px" }}>2.5 Co-occurance Analysis</h3>
-            <Card>
+              <h3 style={{ color: "yellow", marginTop: "20px" }}>
+                2.5 Co-occurance Analysis
+              </h3>
+              <Card>
                 <CardHeader>Correlation Analysis</CardHeader>
                 <CardContent>
                   <p className="mb-4">
-                    Heatmap showing co-occurrence patterns between different constellations. Strong 
-                    correlations exist between certain constellation pairs like Canis Major and Canis 
-                    Minor (178 co-occurrences), Gemini and Canis Minor (233 co-occurrences), and Lyra 
-                    and Cygnus (288 co-occurrences). This information helps understand natural groupings 
-                    and seasonal patterns in constellation visibility.
+                    Heatmap showing co-occurrence patterns between different
+                    constellations. Strong correlations exist between certain
+                    constellation pairs like Canis Major and Canis Minor (178
+                    co-occurrences), Gemini and Canis Minor (233
+                    co-occurrences), and Lyra and Cygnus (288 co-occurrences).
+                    This information helps understand natural groupings and
+                    seasonal patterns in constellation visibility.
                   </p>
                   <div className="flex flex-col items-center space-y-4">
-                    <div className="flex justify-center">
-                      <img 
-                        src="./Co-occurence_1.png" 
-                        style={{ maxWidth: '600px', height: 'auto' }} 
+                    {/* <div className="flex justify-center">
+                      <img
+                        src="./Co-occurence_1.png"
+                        style={{ maxWidth: "600px", height: "auto" }}
                         alt="Correlation matrix"
                       />
                     </div>
                     <div className="flex justify-center">
-                      <img 
-                        src="./Label_correlation.png" 
-                        style={{ maxWidth: '600px', height: 'auto' }} 
+                      <img
+                        src="./Label_correlation.png"
+                        style={{ maxWidth: "600px", height: "auto" }}
                         alt="Correlation matrix"
                       />
-                    </div>
+                    </div> */}
+
+                    <ImageGallery
+                      imagesInfoArray={[
+                        { src: "./Co-occurence_1.png" },
+                        { src: "./Label_correlation.png" },
+                      ]}
+                      columnCount={"auto"}
+                      columnWidth={400}
+                      gapSize={24}
+                    />
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <h3 style={{ color: "yellow", marginTop: "20px" }}>2.6 Dataset Splitting</h3>
+            <h3 style={{ color: "yellow", marginTop: "20px" }}>
+              2.6 Dataset Splitting
+            </h3>
             <Card>
               <CardContent>
                 <p>The dataset is stratified into:</p>
@@ -537,7 +668,10 @@ export default function DataExploration() {
                   <li>Validation set: 15%</li>
                   <li>Test set: 15%</li>
                 </ul>
-                <p className="mt-4">Using iterative stratification strategy considering constellation co-occurrence patterns.</p>
+                <p className="mt-4">
+                  Using iterative stratification strategy considering
+                  constellation co-occurrence patterns.
+                </p>
               </CardContent>
             </Card>
           </div>
